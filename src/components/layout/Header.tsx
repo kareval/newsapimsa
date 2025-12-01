@@ -42,7 +42,23 @@ export default function Header() {
                             <div className="absolute left-0 mt-0 w-56 bg-white rounded-md shadow-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-left border border-gray-100">
                                 <Link href="/destacados/volta" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-sapimsa-crimson border-b border-gray-50">
                                     <span className="font-bold block">VOLTA</span>
+                                    <span className="text-xs text-gray-500 font-normal">El Salto Cuántico Energético</span>
+                                </Link>
+                                <Link href="/destacados/experience-studio" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-sapimsa-crimson border-b border-gray-50">
+                                    <span className="font-bold block">Experience Studio</span>
+                                    <span className="text-xs text-gray-500 font-normal">Estrategia CX & SAP Fiori</span>
+                                </Link>
+                                <Link href="/destacados/capacidades" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-sapimsa-crimson border-b border-gray-50">
+                                    <span className="font-bold block">Capacidades</span>
+                                    <span className="text-xs text-gray-500 font-normal">Cartera de Servicios Integral</span>
+                                </Link>
+                                <Link href="/destacados/data-intelligence" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-sapimsa-crimson border-b border-gray-50">
+                                    <span className="font-bold block">Data Intelligence</span>
                                     <span className="text-xs text-gray-500 font-normal">Estrategia AI & Cloud Platform</span>
+                                </Link>
+                                <Link href="/destacados/hiperautomatizacion" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-sapimsa-crimson">
+                                    <span className="font-bold block">Hiperautomatización</span>
+                                    <span className="text-xs text-gray-500 font-normal">RPA, IA & Case Management</span>
                                 </Link>
                             </div>
                         </div>
