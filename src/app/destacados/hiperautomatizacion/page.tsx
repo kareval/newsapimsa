@@ -72,6 +72,101 @@ export default function HyperautomationPage() {
                 </div>
             </div>
 
+            {/* Service Model Section */}
+            <div className="py-24 bg-white">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-16">
+                        <h2 className="text-3xl font-bold text-sapimsa-jet mb-4">Modelo de Servicio de Extremo a Extremo</h2>
+                        <p className="text-gray-600 max-w-3xl mx-auto">
+                            Orquestamos cada fase del viaje de la automatización para garantizar el máximo retorno de la inversión, desde la estrategia hasta la mejora continua.
+                        </p>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        {/* Consulting */}
+                        <div className="bg-gray-50 p-8 rounded-xl border border-gray-100">
+                            <h3 className="text-xl font-bold text-sapimsa-jet mb-4 flex items-center gap-2">
+                                <span className="w-2 h-8 bg-sapimsa-teal-medium rounded-full"></span>
+                                Consulting & Advisory
+                            </h3>
+                            <ul className="space-y-3 text-gray-600 text-sm">
+                                <li className="flex items-start gap-2">
+                                    <svg className="w-5 h-5 text-sapimsa-teal-medium shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                                    Selección de la mejor solución tecnológica.
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <svg className="w-5 h-5 text-sapimsa-teal-medium shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                                    Diseño de Arquitectura y Framework.
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <svg className="w-5 h-5 text-sapimsa-teal-medium shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                                    Process Discovery y Scoping.
+                                </li>
+                            </ul>
+                        </div>
+
+                        {/* Implementation */}
+                        <div className="bg-gray-50 p-8 rounded-xl border border-gray-100">
+                            <h3 className="text-xl font-bold text-sapimsa-jet mb-4 flex items-center gap-2">
+                                <span className="w-2 h-8 bg-sapimsa-crimson rounded-full"></span>
+                                Implementation Services
+                            </h3>
+                            <ul className="space-y-3 text-gray-600 text-sm">
+                                <li className="flex items-start gap-2">
+                                    <svg className="w-5 h-5 text-sapimsa-crimson shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                                    Desarrollo de workflows automatizados.
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <svg className="w-5 h-5 text-sapimsa-crimson shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                                    Implementación de Intelligent Automation.
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <svg className="w-5 h-5 text-sapimsa-crimson shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                                    Testing y Control de Calidad (QC).
+                                </li>
+                            </ul>
+                        </div>
+
+                        {/* AMS */}
+                        <div className="bg-gray-50 p-8 rounded-xl border border-gray-100">
+                            <h3 className="text-xl font-bold text-sapimsa-jet mb-4 flex items-center gap-2">
+                                <span className="w-2 h-8 bg-sapimsa-purple-medium rounded-full"></span>
+                                AMS & Support
+                            </h3>
+                            <ul className="space-y-3 text-gray-600 text-sm">
+                                <li className="flex items-start gap-2">
+                                    <svg className="w-5 h-5 text-sapimsa-purple-medium shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                                    Mantenimiento de Software Bots.
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <svg className="w-5 h-5 text-sapimsa-purple-medium shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                                    Gestión de la mejora continua.
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <svg className="w-5 h-5 text-sapimsa-purple-medium shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                                    Monitoreo y Health Checks.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* Alliances */}
+                    <div className="mt-20 pt-12 border-t border-gray-100">
+                        <p className="text-center text-sm font-bold text-gray-400 uppercase tracking-widest mb-8">Alianzas Tecnológicas Estratégicas</p>
+                        <div className="flex flex-wrap justify-center gap-8 md:gap-16 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
+                            {/* Text placeholders for logos as we don't have them yet */}
+                            <span className="text-xl font-bold text-gray-600">UiPath</span>
+                            <span className="text-xl font-bold text-gray-600">Appian</span>
+                            <span className="text-xl font-bold text-gray-600">Outsystems</span>
+                            <span className="text-xl font-bold text-gray-600">Pega</span>
+                            <span className="text-xl font-bold text-gray-600">Mendix</span>
+                            <span className="text-xl font-bold text-gray-600">OpenAI</span>
+                            <span className="text-xl font-bold text-gray-600">AWS AI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             {/* Timeline Section */}
             <div className="py-24 bg-white overflow-hidden">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
