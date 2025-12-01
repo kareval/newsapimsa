@@ -40,9 +40,13 @@ export default function Header() {
                                 <svg className="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
                             </button>
                             <div className="absolute left-0 mt-0 w-56 bg-white rounded-md shadow-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-left border border-gray-100">
-                                <Link href="/destacados/volta" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-sapimsa-crimson">
+                                <Link href="/destacados/volta" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-sapimsa-crimson border-b border-gray-50">
                                     <span className="font-bold block">VOLTA</span>
                                     <span className="text-xs text-gray-500 font-normal">El Salto Cuántico Energético</span>
+                                </Link>
+                                <Link href="/destacados/experience-studio" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-sapimsa-crimson">
+                                    <span className="font-bold block">Experience Studio</span>
+                                    <span className="text-xs text-gray-500 font-normal">Estrategia CX & SAP Fiori</span>
                                 </Link>
                             </div>
                         </div>
