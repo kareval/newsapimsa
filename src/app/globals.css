@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-montserrat);
+  --font-mono: monospace;
+
+  /* SAPIMSA Primary Colors */
+  --color-sapimsa-crimson: #BE0036;
+  --color-sapimsa-jet: #333333;
+
+  /* SAPIMSA Auxiliary Colors */
+  --color-sapimsa-crimson-dark: #570A19;
+  --color-sapimsa-crimson-medium: #8C0031;
+  --color-sapimsa-crimson-light: #E81B44;
+
+  --color-sapimsa-grey-dark: #444444;
+  --color-sapimsa-grey-medium: #B4B4B4;
+  --color-sapimsa-grey-light: #E1E3EA;
+
+  /* SAPIMSA Secondary Colors */
+  --color-sapimsa-teal-dark: #335A66;
+  --color-sapimsa-teal-medium: #64929E;
+  --color-sapimsa-teal-light: #AED4E6;
+
+  --color-sapimsa-purple-dark: #7F4073;
+  --color-sapimsa-purple-medium: #AD84A7;
+  --color-sapimsa-purple-light: #DDBFD7;
+
+  --color-sapimsa-red-vibrant: #EB5E55;
+  --color-sapimsa-red-medium: #EF918F;
+  --color-sapimsa-red-light: #F9D3D0;
+
+  --color-sapimsa-yellow-dark: #E5D352;
+  --color-sapimsa-yellow-medium: #EEE390;
+  --color-sapimsa-yellow-light: #F5EFC0;
+}
+
+@layer utilities {
+  .font-lutech {
+    font-family: var(--font-montserrat);
+    font-weight: 300;
+    /* Light */
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    /* Tracking 50 (approx 0.05em) */
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}

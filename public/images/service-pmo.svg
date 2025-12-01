@@ -1,0 +1,20 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gear Background (Red Outline) -->
+  <path d="M100 30L110 50C115 52 120 55 125 58L145 50L155 70L138 85C139 90 139 95 139 100C139 105 139 110 138 115L155 130L145 150L125 142C120 145 115 148 110 150L100 170H80L70 150C65 148 60 145 55 142L35 150L25 130L42 115C41 110 41 105 41 100C41 95 41 90 42 85L25 70L35 50L55 58C60 55 65 52 70 50L80 30H100Z" stroke="#C60036" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Project Plan / Clipboard (White Fill, Red Outline) -->
+  <rect x="65" y="65" width="70" height="90" rx="4" fill="white" stroke="#C60036" stroke-width="3"/>
+  
+  <!-- Content Lines on Clipboard -->
+  <path d="M75 85H125" stroke="#C60036" stroke-width="3" stroke-linecap="round"/>
+  <path d="M75 105H115" stroke="#C60036" stroke-width="3" stroke-linecap="round"/>
+  <path d="M75 125H105" stroke="#C60036" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Checkmarks or Bullets -->
+  <circle cx="125" cy="105" r="3" fill="#C60036"/>
+  <circle cx="115" cy="125" r="3" fill="#C60036"/>
+
+  <!-- Connecting Node -->
+  <circle cx="135" cy="135" r="8" stroke="#C60036" stroke-width="3" fill="white"/>
+  <path d="M135 135L150 150" stroke="#C60036" stroke-width="2"/>
+</svg>
