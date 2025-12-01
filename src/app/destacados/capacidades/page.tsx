@@ -17,7 +17,7 @@ export default function CapabilitiesPage() {
                     </span>
                     <h1 className="text-4xl md:text-6xl font-extrabold text-white font-lutech tracking-tight leading-tight mb-6">
                         Cartera de Servicios <br />
-                        <span className="text-sapimsa-teal-light">SAPiMSA & Lutech</span>
+                        <span className="text-sapimsa-crimson">SAPIMSA Grupo Lutech</span>
                     </h1>
                     <p className="text-xl md:text-2xl text-gray-200 max-w-3xl font-light leading-relaxed">
                         Un ecosistema unificado de transformación digital.
