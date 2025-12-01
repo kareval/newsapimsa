@@ -13,7 +13,7 @@ export default function WhistleblowingPage() {
                     El canal de denuncias de SAPIMSA es accesible a través de la web <a href="https://sapimsa.trusty.report" target="_blank" rel="noopener noreferrer" className="font-bold text-sapimsa-crimson">https://sapimsa.trusty.report</a> facilitando su uso a empleados, agentes comerciales, directivos, socios de negocio, y de cualquier interesado.
                 </p>
                 <div className="mt-6 text-center">
-                    <a href="https://sapimsa.trusty.report/" target="_blank" rel="noopener noreferrer" className="inline-block bg-sapimsa-crimson text-white px-8 py-4 rounded-lg font-bold hover:bg-sapimsa-crimson-dark transition-all transform hover:scale-105 shadow-md no-underline">
+                    <a href="https://sapimsa.trusty.report/" target="_blank" rel="noopener noreferrer" className="inline-block bg-sapimsa-crimson !text-white px-8 py-4 rounded-lg font-bold hover:bg-sapimsa-crimson-dark transition-all transform hover:scale-105 shadow-md no-underline">
                         Acceso a canal de denuncias
                     </a>
                 </div>
