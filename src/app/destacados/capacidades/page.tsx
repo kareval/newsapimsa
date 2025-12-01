@@ -174,36 +174,7 @@ export default function CapabilitiesPage() {
                 </div>
             </div>
 
-            {/* Success Case: Repsol */}
-            <div className="py-24 bg-white">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="bg-gray-50 rounded-2xl p-8 md:p-12 border border-gray-100">
-                        <div className="md:flex items-center justify-between mb-8">
-                            <div>
-                                <h2 className="text-2xl font-bold text-sapimsa-jet mb-2">Caso de Éxito: Repsol</h2>
-                                <p className="text-sapimsa-crimson font-medium">Una asociación de confianza de más de 3 décadas</p>
-                            </div>
-                            <div className="mt-4 md:mt-0 px-6 py-2 bg-white rounded-full shadow-sm font-bold text-gray-800">
-                                NPS: 58%
-                            </div>
-                        </div>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                            <div>
-                                <h4 className="font-bold text-gray-900 mb-2">Experiencia</h4>
-                                <p className="text-sm text-gray-600">30+ años de conocimiento funcional y técnico in-house.</p>
-                            </div>
-                            <div>
-                                <h4 className="font-bold text-gray-900 mb-2">Rendimiento</h4>
-                                <p className="text-sm text-gray-600">100% cumplimiento de Acuerdos de Nivel de Servicio (ANS).</p>
-                            </div>
-                            <div>
-                                <h4 className="font-bold text-gray-900 mb-2">Agilidad</h4>
-                                <p className="text-sm text-gray-600">Respuesta flexible y metodologías ágiles para nuevos requerimientos.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
 
             <CallToAction />
         </div>
