@@ -28,8 +28,8 @@ export default function About() {
                     <div className="mt-10 lg:mt-0 relative">
                         <div className="relative h-64 sm:h-72 md:h-96 lg:h-auto lg:aspect-[4/3] w-full rounded-xl overflow-hidden shadow-2xl">
                             <Image
-                                src="/images/uploads/lutech-office.jpg"
-                                alt="Oficinas Lutech SAPIMSA"
+                                src="/images/uploads/evolution-mural.png"
+                                alt="Evolución y Valores SAPIMSA"
                                 fill
                                 className="object-cover"
                             />
