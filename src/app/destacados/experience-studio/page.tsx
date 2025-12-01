@@ -6,10 +6,10 @@ export default function ExperienceStudioPage() {
         <div className="bg-white min-h-screen">
             {/* Hero Section */}
             <div className="relative bg-sapimsa-jet py-32 overflow-hidden">
-                <div className="absolute inset-0 opacity-40">
+                <div className="absolute inset-0 opacity-60">
                     <Image
-                        src="/images/uploads/human-future.png"
-                        alt="Lutech Experience Studio"
+                        src="/images/uploads/experience-hero.png"
+                        alt="Lutech Experience Studio Abstract Art"
                         fill
                         className="object-cover object-center"
                     />
@@ -117,7 +117,16 @@ export default function ExperienceStudioPage() {
 
             {/* SAP Fiori Section */}
             <div className="py-24 bg-sapimsa-jet text-white overflow-hidden relative">
-                <div className="absolute inset-0 opacity-10 bg-[url('/images/uploads/neon-tech.jpg')] bg-cover bg-center"></div>
+                <div className="absolute inset-0 opacity-20">
+                    <Image
+                        src="/images/uploads/experience-process.png"
+                        alt="Abstract Process Flow"
+                        fill
+                        className="object-cover object-center"
+                    />
+                </div>
+                {/* Overlay gradient for readability */}
+                <div className="absolute inset-0 bg-gradient-to-r from-sapimsa-jet via-sapimsa-jet/80 to-transparent z-0"></div>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <div className="lg:flex lg:items-center lg:space-x-16">
                         <div className="lg:w-1/2 mb-12 lg:mb-0">
