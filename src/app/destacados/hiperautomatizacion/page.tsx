@@ -284,6 +284,62 @@ export default function HyperautomationPage() {
                 </div>
             </div>
 
+            {/* Value Evolution Section */}
+            <div className="py-24 bg-gray-50">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-16">
+                        <h2 className="text-3xl font-bold text-sapimsa-jet mb-4">Evolución del Valor: Modelo de Madurez</h2>
+                        <p className="text-gray-600 max-w-3xl mx-auto">
+                            Un camino probado hacia la máxima eficiencia, donde la sofisticación de la solución se traduce directamente en mayores ahorros.
+                        </p>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        {/* Phase 1 */}
+                        <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 relative overflow-hidden group">
+                            <div className="absolute top-0 right-0 bg-sapimsa-teal-light text-white text-xs font-bold px-3 py-1 rounded-bl-lg">Fase 1</div>
+                            <h3 className="text-lg font-bold text-sapimsa-jet mb-2 mt-2">RPA Stand-alone</h3>
+                            <p className="text-sm text-gray-500 mb-4 h-12">Automatización de tareas repetitivas para reducción rápida de volumen.</p>
+                            <div className="flex items-end gap-2 mb-2">
+                                <span className="text-3xl font-bold text-sapimsa-teal-medium">10%</span>
+                                <span className="text-xs text-gray-400 mb-1 uppercase font-bold">Ahorro Anual</span>
+                            </div>
+                            <div className="w-full bg-gray-100 rounded-full h-2">
+                                <div className="bg-sapimsa-teal-medium h-2 rounded-full" style={{ width: '33%' }}></div>
+                            </div>
+                        </div>
+
+                        {/* Phase 2 */}
+                        <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 relative overflow-hidden group">
+                            <div className="absolute top-0 right-0 bg-sapimsa-teal-medium text-white text-xs font-bold px-3 py-1 rounded-bl-lg">Fase 2</div>
+                            <h3 className="text-lg font-bold text-sapimsa-jet mb-2 mt-2">RPA + Case Mgmt</h3>
+                            <p className="text-sm text-gray-500 mb-4 h-12">Cooperación Robot-Humano para gestión de procesos complejos E2E.</p>
+                            <div className="flex items-end gap-2 mb-2">
+                                <span className="text-3xl font-bold text-sapimsa-crimson">20%</span>
+                                <span className="text-xs text-gray-400 mb-1 uppercase font-bold">Ahorro Anual</span>
+                            </div>
+                            <div className="w-full bg-gray-100 rounded-full h-2">
+                                <div className="bg-sapimsa-crimson h-2 rounded-full" style={{ width: '66%' }}></div>
+                            </div>
+                        </div>
+
+                        {/* Phase 3 */}
+                        <div className="bg-white p-6 rounded-xl shadow-md border-2 border-sapimsa-purple-light relative overflow-hidden group transform md:-translate-y-2">
+                            <div className="absolute top-0 right-0 bg-sapimsa-purple-medium text-white text-xs font-bold px-3 py-1 rounded-bl-lg">Fase 3</div>
+                            <h3 className="text-lg font-bold text-sapimsa-jet mb-2 mt-2">Full Hyperautomation</h3>
+                            <p className="text-sm text-gray-500 mb-4 h-12">Integración de IA para maximizar el alcance y la toma de decisiones.</p>
+                            <div className="flex items-end gap-2 mb-2">
+                                <span className="text-3xl font-bold text-sapimsa-purple-medium">30%</span>
+                                <span className="text-xs text-gray-400 mb-1 uppercase font-bold">Ahorro Anual</span>
+                            </div>
+                            <div className="w-full bg-gray-100 rounded-full h-2">
+                                <div className="bg-sapimsa-purple-medium h-2 rounded-full" style={{ width: '100%' }}></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             {/* Methodology */}
             <div className="py-24 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
