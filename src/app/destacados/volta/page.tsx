@@ -6,10 +6,10 @@ export default function VoltaPage() {
         <div className="bg-white min-h-screen">
             {/* Hero Section */}
             <div className="relative bg-sapimsa-jet py-32 overflow-hidden">
-                <div className="absolute inset-0 opacity-30">
+                <div className="absolute inset-0 opacity-60">
                     <Image
-                        src="/images/uploads/neon-tech.jpg"
-                        alt="Volta Energy"
+                        src="/images/uploads/volta-hero.png"
+                        alt="Volta Energy Quantum Leap"
                         fill
                         className="object-cover object-center"
                     />
@@ -164,8 +164,17 @@ export default function VoltaPage() {
             </div>
 
             {/* The Vision: 360 Real */}
-            <div className="py-24 bg-sapimsa-jet text-white">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div className="py-24 bg-sapimsa-jet text-white relative overflow-hidden">
+                <div className="absolute inset-0 opacity-40">
+                    <Image
+                        src="/images/uploads/volta-vision.jpg"
+                        alt="Volta Vision 360"
+                        fill
+                        className="object-cover object-center"
+                    />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-sapimsa-jet via-sapimsa-jet/80 to-transparent"></div>
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
                     <h2 className="text-3xl font-extrabold font-lutech mb-8">
                         Visión 360° Real: Rompiendo los Silos
                     </h2>
