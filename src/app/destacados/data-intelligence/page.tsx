@@ -145,6 +145,24 @@ export default function DataIntelligencePage() {
                 </div>
             </div>
 
+            {/* Technology Showcase: SAP Analytics Cloud */}
+            <div className="py-12 bg-white">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                        <Image
+                            src="/images/uploads/sap-analytics-dashboard.png"
+                            alt="SAP Analytics Cloud Dashboard"
+                            width={1920}
+                            height={1080}
+                            className="w-full h-auto object-cover"
+                        />
+                        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-8">
+                            <p className="text-white text-lg font-medium">Visualización en Tiempo Real con SAP Analytics Cloud</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             {/* Impact & Success Cases */}
             <div className="py-24 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
