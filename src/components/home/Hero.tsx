@@ -4,8 +4,8 @@ import Image from 'next/image';
 export default function Hero() {
     return (
         <div className="relative bg-sapimsa-jet overflow-hidden min-h-[80vh] flex items-center">
-            {/* Background Video */}
-            <div className="absolute inset-0 z-0">
+            {/* Background Video - Covers 80% of the width from the right */}
+            <div className="absolute top-0 right-0 w-[80%] h-full z-0">
                 <video
                     autoPlay
                     loop
@@ -17,8 +17,8 @@ export default function Hero() {
                     <source src="/videos/hero-background.mov" type="video/quicktime" />
                     Your browser does not support the video tag.
                 </video>
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-sapimsa-jet/80 bg-gradient-to-r from-sapimsa-jet via-sapimsa-jet/80 to-transparent"></div>
+                {/* Overlay - Gradient from solid color to transparent, lighter opacity */}
+                <div className="absolute inset-0 bg-gradient-to-r from-sapimsa-jet via-sapimsa-jet/40 to-transparent"></div>
             </div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full py-20">
