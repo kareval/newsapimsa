@@ -1,53 +1,57 @@
+```javascript
 import Link from 'next/link';
 import Image from 'next/image';
 
 export default function Hero() {
     return (
-        <div className="relative bg-sapimsa-jet overflow-hidden">
-            <div className="max-w-7xl mx-auto">
-                <div className="relative z-10 pb-8 bg-sapimsa-jet sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-                    <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
-                        <div className="sm:text-center lg:text-left">
-                            <h1 className="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl">
-                                <span className="block xl:inline">Soluciones integrales para</span>{' '}
-                                <span className="block text-sapimsa-crimson xl:inline">la transformación empresarial</span>
-                            </h1>
-                            <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                                Comprometidos con la calidad y la innovación. Ofrecemos servicios especializados adaptados a las necesidades de cada cliente, garantizando eficiencia y resultados.
-                            </p>
-                            <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                                <div className="rounded-md shadow">
-                                    <Link
-                                        href="/contact"
-                                        className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-sapimsa-crimson hover:bg-sapimsa-crimson-dark md:py-4 md:text-lg transition-colors"
-                                    >
-                                        Contáctanos
-                                    </Link>
-                                </div>
-                                <div className="mt-3 sm:mt-0 sm:ml-3">
-                                    <Link
-                                        href="/services"
-                                        className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-sapimsa-crimson bg-white hover:bg-gray-50 md:py-4 md:text-lg transition-colors"
-                                    >
-                                        Nuestros Servicios
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-                    </main>
-                </div>
+        <div className="relative bg-sapimsa-jet overflow-hidden min-h-[80vh] flex items-center">
+            {/* Background Video */}
+            <div className="absolute inset-0 z-0">
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full h-full object-cover"
+                >
+                    <source src="/videos/hero-background.mov" type="video/mp4" />
+                    <source src="/videos/hero-background.mov" type="video/quicktime" />
+                    Your browser does not support the video tag.
+                </video>
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-sapimsa-jet/80 bg-gradient-to-r from-sapimsa-jet via-sapimsa-jet/80 to-transparent"></div>
             </div>
-            <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 bg-sapimsa-grey-dark">
-                <div className="relative h-56 w-full sm:h-72 md:h-96 lg:h-full">
-                    <Image
-                        src="/images/hero.png"
-                        alt="Industrial Office Digital Transformation"
-                        fill
-                        className="object-cover"
-                        priority
-                    />
+
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full py-20">
+                <div className="sm:text-center lg:text-left lg:max-w-2xl">
+                    <h1 className="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl mb-6">
+                        <span className="block xl:inline">Soluciones integrales para</span>{' '}
+                        <span className="block text-sapimsa-crimson xl:inline">la transformación empresarial</span>
+                    </h1>
+                    <p className="mt-4 text-xl text-gray-200 sm:max-w-xl sm:mx-auto md:mt-5 lg:mx-0 font-light leading-relaxed">
+                        Comprometidos con la calidad y la innovación. Ofrecemos servicios especializados adaptados a las necesidades de cada cliente, garantizando eficiencia y resultados.
+                    </p>
+                    <div className="mt-8 sm:mt-10 sm:flex sm:justify-center lg:justify-start gap-4">
+                        <div className="rounded-md shadow">
+                            <Link
+                                href="/contact"
+                                className="w-full flex items-center justify-center px-8 py-4 border border-transparent text-lg font-bold rounded-md text-white bg-sapimsa-crimson hover:bg-sapimsa-crimson-dark transition-all transform hover:scale-105"
+                            >
+                                Contáctanos
+                            </Link>
+                        </div>
+                        <div className="mt-3 sm:mt-0">
+                            <Link
+                                href="/services"
+                                className="w-full flex items-center justify-center px-8 py-4 border-2 border-white text-lg font-bold rounded-md text-white hover:bg-white hover:text-sapimsa-jet transition-all transform hover:scale-105"
+                            >
+                                Nuestros Servicios
+                            </Link>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     );
 }
+```
