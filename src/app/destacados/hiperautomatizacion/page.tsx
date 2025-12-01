@@ -16,7 +16,7 @@ export default function HyperautomationPage() {
                     </span>
                     <h1 className="text-5xl md:text-7xl font-extrabold text-white font-lutech tracking-tight leading-tight mb-6">
                         Hiperautomatización <br />
-                        <span className="text-sapimsa-teal-light">Estratégica</span>
+                        <span className="text-sapimsa-crimson">Estratégica</span>
                     </h1>
                     <p className="text-2xl md:text-3xl text-gray-200 max-w-3xl font-light leading-relaxed">
                         Evolución y Resultados de la Transformación Digital (2018-2025).

@@ -23,7 +23,7 @@ export default function ExperienceStudioPage() {
                         Lutech Experience Studio
                     </h1>
                     <p className="text-2xl md:text-3xl text-gray-200 max-w-3xl font-light leading-relaxed">
-                        Transformando la Experiencia en un <span className="text-sapimsa-teal-light font-bold">Activo Estratégico</span>.
+                        Transformando la Experiencia en un <span className="text-sapimsa-crimson font-bold">Activo Estratégico</span>.
                         <span className="block mt-2 text-lg md:text-xl text-gray-400">Donde el diseño se encuentra con el ROI.</span>
                     </p>
                 </div>

@@ -22,7 +22,7 @@ export default function DataIntelligencePage() {
                     </span>
                     <h1 className="text-5xl md:text-7xl font-extrabold text-white font-lutech tracking-tight leading-tight mb-8 drop-shadow-lg">
                         Hacia una Organización <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-sapimsa-teal-light to-sapimsa-purple-light">Impulsada por Datos</span>
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-sapimsa-crimson to-sapimsa-purple-light">Impulsada por Datos</span>
                     </h1>
                     <p className="text-xl md:text-2xl text-gray-100 max-w-2xl font-light leading-relaxed drop-shadow-md">
                         Transformando la información en el activo más valioso.
