@@ -6,9 +6,16 @@ export default function HyperautomationPage() {
         <div className="bg-white">
             {/* Hero Section */}
             <div className="relative bg-sapimsa-jet py-32 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-sapimsa-jet via-sapimsa-jet/90 to-sapimsa-crimson/20"></div>
-                {/* Abstract geometric background as placeholder */}
-                <div className="absolute inset-0 opacity-20 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-sapimsa-teal-light via-transparent to-transparent"></div>
+                <div className="absolute inset-0">
+                    <Image
+                        src="/images/uploads/hyperautomation-hero.png"
+                        alt="Hyperautomation Abstract Hero"
+                        fill
+                        className="object-cover object-center opacity-40"
+                        priority
+                    />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-r from-sapimsa-jet via-sapimsa-jet/90 to-transparent"></div>
 
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
                     <span className="inline-block py-1 px-3 rounded-full bg-sapimsa-crimson text-white text-sm font-bold tracking-wide uppercase mb-4">
@@ -233,12 +240,13 @@ export default function HyperautomationPage() {
                             </div>
                         </div>
                         <div className="md:w-1/2">
-                            {/* Placeholder for Timeline Visual */}
-                            <div className="aspect-video bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl shadow-inner flex items-center justify-center relative overflow-hidden">
-                                <div className="absolute inset-0 bg-[url('/images/grid.svg')] opacity-10"></div>
-                                <div className="text-center p-8">
-                                    <p className="text-gray-400 font-light italic">Visualización 3D de Evolución Tecnológica</p>
-                                </div>
+                            <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl transform md:rotate-1 hover:rotate-0 transition-transform duration-500">
+                                <Image
+                                    src="/images/uploads/hyperautomation-timeline.png"
+                                    alt="Timeline of Innovation"
+                                    fill
+                                    className="object-cover"
+                                />
                             </div>
                         </div>
                     </div>
@@ -246,8 +254,17 @@ export default function HyperautomationPage() {
             </div>
 
             {/* Impact & Results */}
-            <div className="py-24 bg-sapimsa-jet text-white">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="relative py-24 bg-sapimsa-jet text-white overflow-hidden">
+                <div className="absolute inset-0 opacity-20">
+                    <Image
+                        src="/images/uploads/hyperautomation-impact.png"
+                        alt="Impact Background"
+                        fill
+                        className="object-cover"
+                    />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-b from-sapimsa-jet/90 via-sapimsa-jet/80 to-sapimsa-jet/90"></div>
+                <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl font-bold mb-4">Impacto Estratégico Comprobado</h2>
                         <p className="text-gray-300 max-w-2xl mx-auto">
@@ -345,11 +362,13 @@ export default function HyperautomationPage() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="md:flex md:gap-16 items-center">
                         <div className="md:w-1/2 order-2 md:order-1">
-                            {/* Placeholder for Methodology Visual */}
-                            <div className="aspect-square bg-gradient-to-br from-white to-gray-100 rounded-full shadow-lg flex items-center justify-center relative border-4 border-sapimsa-teal-light/20">
-                                <div className="text-center p-8">
-                                    <p className="text-gray-400 font-light italic">Metodología Agile & Execution Room</p>
-                                </div>
+                            <div className="relative aspect-square rounded-full overflow-hidden shadow-2xl border-4 border-white/20">
+                                <Image
+                                    src="/images/uploads/hyperautomation-methodology.png"
+                                    alt="Agile Methodology"
+                                    fill
+                                    className="object-cover"
+                                />
                             </div>
                         </div>
                         <div className="md:w-1/2 order-1 md:order-2 mb-12 md:mb-0">
