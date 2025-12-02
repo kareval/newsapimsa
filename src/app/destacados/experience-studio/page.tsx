@@ -20,7 +20,7 @@ export default function ExperienceStudioPage() {
                         Destacados
                     </span>
                     <h1 className="text-5xl md:text-7xl font-extrabold text-white font-lutech tracking-tight leading-tight mb-6">
-                        Lutech Experience Studio
+                        Experience Studio
                     </h1>
                     <p className="text-2xl md:text-3xl text-gray-200 max-w-3xl font-light leading-relaxed">
                         Transformando la Experiencia en un <span className="text-sapimsa-crimson font-bold">Activo Estratégico</span>.
