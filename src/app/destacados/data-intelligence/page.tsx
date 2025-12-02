@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import CallToAction from "@/components/common/CallToAction";
 
 export default function DataIntelligencePage() {
@@ -221,6 +222,85 @@ export default function DataIntelligencePage() {
                         <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-8 md:p-12">
                             <h3 className="text-white text-2xl md:text-3xl font-bold mb-2">Visualización en Tiempo Real</h3>
                             <p className="text-gray-200 text-lg">Potenciado por SAP Analytics Cloud</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* SAP Business Data Cloud & AI Section */}
+            <div className="py-24 bg-white">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                        <div className="mb-12 lg:mb-0">
+                            <span className="inline-block py-1 px-3 rounded-full bg-sapimsa-teal-light/10 text-sapimsa-teal-medium text-sm font-bold tracking-wide uppercase mb-4">
+                                Nueva Economía de la IA
+                            </span>
+                            <h2 className="text-3xl md:text-4xl font-extrabold text-sapimsa-jet font-lutech mb-6">
+                                SAP Business Data Cloud
+                            </h2>
+                            <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+                                SAP ha liderado la estandarización de los procesos de negocio por años. En la nueva economía de la Inteligencia Artificial, se requiere disponibilizar <strong>Datos “curados” y enriquecidos</strong> con contexto de negocio, así como <strong>“IA Ready”</strong>.
+                            </p>
+                            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                                Con nuestros servicios de Data Intelligence, explore cómo sacar partido de <strong>SAP Business Data Cloud</strong> para desencadenar el potencial que atesoran los datos de sus entornos SAP.
+                            </p>
+
+                            <div className="bg-gray-50 p-6 rounded-xl border-l-4 border-sapimsa-crimson mb-8">
+                                <h4 className="font-bold text-sapimsa-jet mb-2">Oferta Exclusiva: Sesión de Exploración</h4>
+                                <p className="text-sm text-gray-600 mb-4">
+                                    ¡No se quede atrás! Llámenos y en una sesión de media jornada exploramos conjuntamente cómo implementar la mejor estrategia para sacar todo el partido de sus datos.
+                                </p>
+                                <Link href="/contact" className="text-sapimsa-crimson font-bold hover:text-red-700 inline-flex items-center transition-colors">
+                                    Agendar Sesión <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                                </Link>
+                            </div>
+                        </div>
+
+                        <div className="space-y-6">
+                            {/* Feature 1 */}
+                            <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                                <div className="flex items-start">
+                                    <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center text-blue-600">
+                                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                                    </div>
+                                    <div className="ml-4">
+                                        <h3 className="text-xl font-bold text-sapimsa-jet mb-2">Estrategias Lakehouse</h3>
+                                        <p className="text-gray-600 text-sm">
+                                            Construcción de arquitecturas modernas con <strong>SAP Databricks</strong> y SAP Products, unificando almacenes de datos y lagos de datos para una analítica sin fisuras.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Feature 2 */}
+                            <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                                <div className="flex items-start">
+                                    <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-purple-100 flex items-center justify-center text-purple-600">
+                                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                    </div>
+                                    <div className="ml-4">
+                                        <h3 className="text-xl font-bold text-sapimsa-jet mb-2">Agentes Multimodales</h3>
+                                        <p className="text-gray-600 text-sm">
+                                            Intervención de agentes colaborativos desarrollados por el fabricante y potenciados con <strong>SAP Custom Business AI by SAPIMSA</strong>.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Feature 3 */}
+                            <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                                <div className="flex items-start">
+                                    <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-green-100 flex items-center justify-center text-green-600">
+                                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                                    </div>
+                                    <div className="ml-4">
+                                        <h3 className="text-xl font-bold text-sapimsa-jet mb-2">Aceleración de Valor</h3>
+                                        <p className="text-gray-600 text-sm">
+                                            Evite costes innecesarios y acelere la adopción de Soluciones Inteligentes basadas en las últimas innovaciones de SAP Business AI.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
