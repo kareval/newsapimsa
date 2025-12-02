@@ -1,6 +1,13 @@
 import Image from 'next/image';
 import CallToAction from "@/components/common/CallToAction";
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: "Lutech Experience Studio | CX & SAP Fiori",
+    description: "Redefiniendo la experiencia de usuario con SAP Fiori y metodologías de diseño centradas en el humano. Estrategia CX para la era digital.",
+};
+
 export default function ExperienceStudioPage() {
     return (
         <div className="bg-white min-h-screen">

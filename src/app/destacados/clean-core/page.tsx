@@ -1,6 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: "Clean Core Strategy & S/4HANA | SAPIMSA Grupo Lutech",
+    description: "Guía estratégica para la transición a SAP Clean Core. Modernice su ERP, reduzca la deuda técnica y prepare su organización para la innovación continua.",
+};
+
 export default function CleanCorePage() {
     return (
         <div className="bg-white">

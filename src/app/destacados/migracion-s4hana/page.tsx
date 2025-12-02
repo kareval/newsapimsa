@@ -1,6 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: "Migración a SAP S/4HANA | Alternativas y Estrategias",
+    description: "Compare estrategias de migración: Greenfield, Brownfield y Hybrid. Descubra los modelos de despliegue RISE y GROW con SAPIMSA Grupo Lutech.",
+};
+
 export default function MigrationPage() {
     return (
         <div className="bg-white">

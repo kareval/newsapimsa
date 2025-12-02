@@ -1,6 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: "Hiperautomatización Estratégica | SAPIMSA Grupo Lutech",
+    description: "Evolucione más allá del RPA. Integre Inteligencia Artificial, Machine Learning y Case Management para automatizar procesos complejos de principio a fin.",
+};
+
 export default function HyperautomationPage() {
     return (
         <div className="bg-white">

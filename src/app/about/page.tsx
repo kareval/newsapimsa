@@ -3,6 +3,13 @@ import AboutComponent from "@/components/home/About";
 import StrategicVision from "@/components/home/StrategicVision";
 import Testimonials from "@/components/about/Testimonials";
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: "Quiénes Somos | SAPIMSA Grupo Lutech",
+    description: "Conozca a SAPIMSA Grupo Lutech, su socio estratégico en transformación digital. Descubra nuestra historia, valores y el equipo humano que impulsa el futuro.",
+};
+
 export default function AboutPage() {
     return (
         <div className="flex flex-col min-h-screen">

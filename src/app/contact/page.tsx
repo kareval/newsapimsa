@@ -1,5 +1,12 @@
 import Image from 'next/image';
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: "Contacto | SAPIMSA Grupo Lutech",
+    description: "Hablemos sobre su próximo proyecto de transformación. Contacte con nuestros expertos en SAP y tecnología para una evaluación personalizada.",
+};
+
 export default function ContactPage() {
     return (
         <div className="flex flex-col min-h-screen bg-gray-50">

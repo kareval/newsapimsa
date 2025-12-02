@@ -1,6 +1,13 @@
 import Image from 'next/image';
 import CallToAction from "@/components/common/CallToAction";
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: "VOLTA: El Salto Cuántico Energético | SAPIMSA Grupo Lutech",
+    description: "Descubra VOLTA, nuestra solución para la transición energética. De la 'Vela' a la 'Batería': eficiencia, sostenibilidad y tecnología avanzada.",
+};
+
 export default function VoltaPage() {
     return (
         <div className="bg-white min-h-screen">

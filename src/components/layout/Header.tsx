@@ -1,7 +1,13 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
+import { useState } from 'react';
 
 export default function Header() {
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [isDestacadosOpen, setIsDestacadosOpen] = useState(false);
+
     return (
         <header className="bg-white shadow-sm sticky top-0 z-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -39,7 +45,7 @@ export default function Header() {
                                 Destacados
                                 <svg className="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
                             </button>
-                            <div className="absolute left-0 mt-0 w-56 bg-white rounded-md shadow-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-left border border-gray-100">
+                            <div className="absolute left-0 mt-0 w-64 bg-white rounded-md shadow-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-left border border-gray-100 max-h-[80vh] overflow-y-auto">
                                 <Link href="/destacados/volta" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-sapimsa-crimson border-b border-gray-50">
                                     <span className="font-bold block">VOLTA</span>
                                     <span className="text-xs text-gray-500 font-normal">El Salto Cuántico Energético</span>
@@ -64,9 +70,13 @@ export default function Header() {
                                     <span className="font-bold block">Clean Core Strategy</span>
                                     <span className="text-xs text-gray-500 font-normal">Transición S/4HANA</span>
                                 </Link>
-                                <Link href="/destacados/migracion-s4hana" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-sapimsa-crimson">
+                                <Link href="/destacados/migracion-s4hana" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-sapimsa-crimson border-b border-gray-50">
                                     <span className="font-bold block">Migración S/4HANA</span>
                                     <span className="text-xs text-gray-500 font-normal">Guía de Alternativas & Cloud</span>
+                                </Link>
+                                <Link href="/destacados/sector-publico" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-sapimsa-crimson">
+                                    <span className="font-bold block">Sector Público</span>
+                                    <span className="text-xs text-gray-500 font-normal">Transformación Digital & SAP</span>
                                 </Link>
                             </div>
                         </div>
@@ -75,18 +85,136 @@ export default function Header() {
                         </Link>
                     </nav>
 
-                    {/* Mobile Menu Button (Placeholder) */}
+                    {/* Mobile Menu Button */}
                     <div className="flex items-center md:hidden">
-                        <button type="button" className="text-sapimsa-jet hover:text-sapimsa-crimson p-2">
+                        <button
+                            type="button"
+                            className="text-sapimsa-jet hover:text-sapimsa-crimson p-2"
+                            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                        >
                             <span className="sr-only">Open menu</span>
-                            {/* Hamburger Icon */}
-                            <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                            </svg>
+                            {isMobileMenuOpen ? (
+                                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            ) : (
+                                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                                </svg>
+                            )}
                         </button>
                     </div>
                 </div>
             </div>
+
+            {/* Mobile Menu Overlay */}
+            {isMobileMenuOpen && (
+                <div className="md:hidden bg-white border-t border-gray-100 absolute w-full left-0 shadow-lg max-h-[calc(100vh-80px)] overflow-y-auto">
+                    <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                        <Link
+                            href="/"
+                            className="block px-3 py-2 rounded-md text-base font-medium text-sapimsa-jet hover:text-sapimsa-crimson hover:bg-gray-50"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                        >
+                            Inicio
+                        </Link>
+                        <Link
+                            href="/about"
+                            className="block px-3 py-2 rounded-md text-base font-medium text-sapimsa-jet hover:text-sapimsa-crimson hover:bg-gray-50"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                        >
+                            Quiénes Somos
+                        </Link>
+                        <Link
+                            href="/services"
+                            className="block px-3 py-2 rounded-md text-base font-medium text-sapimsa-jet hover:text-sapimsa-crimson hover:bg-gray-50"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                        >
+                            Servicios
+                        </Link>
+
+                        {/* Mobile Destacados Dropdown */}
+                        <div>
+                            <button
+                                onClick={() => setIsDestacadosOpen(!isDestacadosOpen)}
+                                className="w-full text-left flex justify-between items-center px-3 py-2 rounded-md text-base font-medium text-sapimsa-jet hover:text-sapimsa-crimson hover:bg-gray-50"
+                            >
+                                Destacados
+                                <svg className={`w-4 h-4 transition-transform ${isDestacadosOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </button>
+
+                            {isDestacadosOpen && (
+                                <div className="pl-4 space-y-1 bg-gray-50/50">
+                                    <Link
+                                        href="/destacados/volta"
+                                        className="block px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-sapimsa-crimson"
+                                        onClick={() => setIsMobileMenuOpen(false)}
+                                    >
+                                        VOLTA
+                                    </Link>
+                                    <Link
+                                        href="/destacados/experience-studio"
+                                        className="block px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-sapimsa-crimson"
+                                        onClick={() => setIsMobileMenuOpen(false)}
+                                    >
+                                        Experience Studio
+                                    </Link>
+                                    <Link
+                                        href="/destacados/capacidades"
+                                        className="block px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-sapimsa-crimson"
+                                        onClick={() => setIsMobileMenuOpen(false)}
+                                    >
+                                        Capacidades
+                                    </Link>
+                                    <Link
+                                        href="/destacados/data-intelligence"
+                                        className="block px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-sapimsa-crimson"
+                                        onClick={() => setIsMobileMenuOpen(false)}
+                                    >
+                                        Data Intelligence
+                                    </Link>
+                                    <Link
+                                        href="/destacados/hiperautomatizacion"
+                                        className="block px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-sapimsa-crimson"
+                                        onClick={() => setIsMobileMenuOpen(false)}
+                                    >
+                                        Hiperautomatización
+                                    </Link>
+                                    <Link
+                                        href="/destacados/clean-core"
+                                        className="block px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-sapimsa-crimson"
+                                        onClick={() => setIsMobileMenuOpen(false)}
+                                    >
+                                        Clean Core Strategy
+                                    </Link>
+                                    <Link
+                                        href="/destacados/migracion-s4hana"
+                                        className="block px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-sapimsa-crimson"
+                                        onClick={() => setIsMobileMenuOpen(false)}
+                                    >
+                                        Migración S/4HANA
+                                    </Link>
+                                    <Link
+                                        href="/destacados/sector-publico"
+                                        className="block px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-sapimsa-crimson"
+                                        onClick={() => setIsMobileMenuOpen(false)}
+                                    >
+                                        Sector Público
+                                    </Link>
+                                </div>
+                            )}
+                        </div>
+
+                        <Link
+                            href="/contact"
+                            className="block px-3 py-2 rounded-md text-base font-medium text-sapimsa-jet hover:text-sapimsa-crimson hover:bg-gray-50"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                        >
+                            Contacto
+                        </Link>
+                    </div>
+                </div>
+            )}
         </header>
     );
 }

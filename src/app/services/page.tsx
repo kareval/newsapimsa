@@ -3,6 +3,13 @@ import Image from 'next/image';
 import ServicePortfolio from "@/components/services/ServicePortfolio";
 import CallToAction from "@/components/common/CallToAction";
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: "Servicios SAP & Innovación | SAPIMSA Grupo Lutech",
+    description: "Cartera integral de servicios: Implementación S/4HANA, Migración Cloud, Hiperautomatización, Data Intelligence y Soporte AMS.",
+};
+
 export default function ServicesPage() {
     return (
         <div className="flex flex-col min-h-screen">

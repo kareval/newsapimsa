@@ -1,6 +1,13 @@
 import Image from 'next/image';
 import CallToAction from "@/components/common/CallToAction";
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: "Capacidades y Servicios | SAPIMSA Grupo Lutech",
+    description: "Informe detallado de nuestras capacidades: SAP S/4HANA, Cloud, Ciberseguridad, AI y soluciones específicas para Energy & Utilities.",
+};
+
 export default function CapabilitiesPage() {
     return (
         <div className="bg-white min-h-screen">

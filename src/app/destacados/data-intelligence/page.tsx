@@ -2,6 +2,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import CallToAction from "@/components/common/CallToAction";
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: "Data Intelligence & AI | SAPIMSA Grupo Lutech",
+    description: "Transforme sus datos en valor con SAP Business Technology Platform, Inteligencia Artificial y estrategias de Cloud Data Management.",
+};
+
 export default function DataIntelligencePage() {
     return (
         <div className="bg-white min-h-screen">
