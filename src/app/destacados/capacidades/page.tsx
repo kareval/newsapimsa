@@ -6,11 +6,11 @@ export default function CapabilitiesPage() {
         <div className="bg-white min-h-screen">
             {/* Hero Section */}
             <div className="relative bg-sapimsa-jet py-32 overflow-hidden">
-                <div className="absolute inset-0 opacity-20">
+                <div className="absolute inset-0 opacity-60">
                     {/* Placeholder for abstract network image */}
                     <div className="absolute inset-0 bg-[url('/images/uploads/neon-tech.jpg')] bg-cover bg-center"></div>
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-r from-sapimsa-jet via-sapimsa-jet/90 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-sapimsa-jet/90 via-sapimsa-jet/60 to-transparent"></div>
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
                     <span className="inline-block py-1 px-3 rounded-full bg-sapimsa-purple-medium text-white text-sm font-bold tracking-wide uppercase mb-4">
                         Informe de Capacidades

@@ -11,11 +11,11 @@ export default function HyperautomationPage() {
                         src="/images/uploads/hyperautomation-hero.png"
                         alt="Hyperautomation Abstract Hero"
                         fill
-                        className="object-cover object-center opacity-40"
+                        className="object-cover object-center opacity-60"
                         priority
                     />
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-r from-sapimsa-jet via-sapimsa-jet/90 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-sapimsa-jet/90 via-sapimsa-jet/60 to-transparent"></div>
 
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
                     <span className="inline-block py-1 px-3 rounded-full bg-sapimsa-crimson text-white text-sm font-bold tracking-wide uppercase mb-4">

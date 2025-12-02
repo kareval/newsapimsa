@@ -18,7 +18,7 @@ export default function Hero() {
                     Your browser does not support the video tag.
                 </video>
                 {/* Overlay - Gradient from solid color to transparent, lighter opacity */}
-                <div className="absolute inset-0 bg-gradient-to-r from-sapimsa-jet via-sapimsa-jet/40 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-sapimsa-jet/90 via-sapimsa-jet/40 to-transparent"></div>
             </div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full py-20">

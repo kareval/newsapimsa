@@ -7,7 +7,7 @@ export default function ServicesPage() {
     return (
         <div className="flex flex-col min-h-screen">
             <div className="relative bg-sapimsa-jet py-24 overflow-hidden">
-                <div className="absolute inset-0 opacity-20">
+                <div className="absolute inset-0 opacity-60">
                     <Image
                         src="/images/uploads/neon-tech.jpg"
                         alt="Tecnología y Servicios"
@@ -15,6 +15,7 @@ export default function ServicesPage() {
                         className="object-cover object-center"
                     />
                 </div>
+                <div className="absolute inset-0 bg-gradient-to-r from-sapimsa-jet/90 via-sapimsa-jet/60 to-transparent"></div>
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
                     <h1 className="text-4xl md:text-5xl font-extrabold text-white font-lutech tracking-tight">
                         Nuestros Servicios
