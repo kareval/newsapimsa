@@ -56,9 +56,13 @@ export default function Header() {
                                     <span className="font-bold block">Data Intelligence</span>
                                     <span className="text-xs text-gray-500 font-normal">Estrategia AI & Cloud Platform</span>
                                 </Link>
-                                <Link href="/destacados/hiperautomatizacion" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-sapimsa-crimson">
+                                <Link href="/destacados/hiperautomatizacion" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-sapimsa-crimson border-b border-gray-50">
                                     <span className="font-bold block">Hiperautomatización</span>
                                     <span className="text-xs text-gray-500 font-normal">RPA, IA & Case Management</span>
+                                </Link>
+                                <Link href="/destacados/clean-core" className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-sapimsa-crimson">
+                                    <span className="font-bold block">Clean Core Strategy</span>
+                                    <span className="text-xs text-gray-500 font-normal">Transición S/4HANA</span>
                                 </Link>
                             </div>
                         </div>
