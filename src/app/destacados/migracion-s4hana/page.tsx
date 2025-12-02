@@ -7,13 +7,8 @@ export default function MigrationPage() {
             {/* Hero Section */}
             <div className="relative bg-sapimsa-jet py-32 overflow-hidden">
                 <div className="absolute inset-0">
-                    <Image
-                        src="/images/uploads/migration-hero.png"
-                        alt="Migration Strategy Hero"
-                        fill
-                        className="object-cover object-center opacity-60"
-                        priority
-                    />
+
+                    <div className="w-full h-full bg-gradient-to-br from-sapimsa-jet to-sapimsa-teal-dark opacity-50"></div>
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-r from-sapimsa-jet/90 via-sapimsa-jet/60 to-transparent"></div>
 
@@ -53,12 +48,10 @@ export default function MigrationPage() {
                         </div>
                         <div className="md:w-1/2">
                             <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl transform md:rotate-1 hover:rotate-0 transition-transform duration-500">
-                                <Image
-                                    src="/images/uploads/migration-imperative.png"
-                                    alt="Strategic Imperative"
-                                    fill
-                                    className="object-cover"
-                                />
+
+                                <div className="w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                                    <span className="text-gray-400 font-bold text-lg">Visualización Estratégica</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -142,12 +135,8 @@ export default function MigrationPage() {
             {/* Shell Conversion & Comparison */}
             <div className="py-24 bg-sapimsa-jet text-white relative overflow-hidden">
                 <div className="absolute inset-0 opacity-30">
-                    <Image
-                        src="/images/uploads/migration-strategies.png"
-                        alt="Strategies Background"
-                        fill
-                        className="object-cover"
-                    />
+
+                    <div className="w-full h-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-sapimsa-teal-dark/40 via-sapimsa-jet to-sapimsa-jet"></div>
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-b from-sapimsa-jet/85 via-sapimsa-jet/75 to-sapimsa-jet/85"></div>
 
@@ -241,12 +230,10 @@ export default function MigrationPage() {
                     </div>
 
                     <div className="mt-16 relative aspect-[21/9] rounded-2xl overflow-hidden shadow-xl">
-                        <Image
-                            src="/images/uploads/migration-cloud.png"
-                            alt="Cloud Deployment Models"
-                            fill
-                            className="object-cover"
-                        />
+
+                        <div className="w-full h-full bg-gradient-to-r from-sapimsa-teal-light/20 to-sapimsa-purple-light/20 flex items-center justify-center">
+                            <span className="text-gray-400 font-bold text-lg">Modelos Cloud (Public vs Private vs On-Prem)</span>
+                        </div>
                         <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end p-8">
                             <p className="text-white font-medium">La elección del modelo define la velocidad de innovación futura.</p>
                         </div>
