@@ -211,10 +211,12 @@ export default function PublicSectorPage() {
                             </div>
                         </div>
                         <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl">
-                            {/* Placeholder for public_sector_migration */}
-                            <div className="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
-                                <span className="text-gray-400 font-bold text-lg">Visualización de Migración</span>
-                            </div>
+                            <Image
+                                src="/images/uploads/public-sector-migration.png"
+                                alt="Evolución y Migración Digital"
+                                fill
+                                className="object-cover object-center"
+                            />
                         </div>
                     </div>
                 </div>
